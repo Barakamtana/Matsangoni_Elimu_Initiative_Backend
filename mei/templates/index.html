@@ -1,0 +1,354 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Baraka Mtana">
+    <title>MEI</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="{% static '/images/logo.png' %}">
+
+    <!-- css files -->
+    <link rel="stylesheet" href="{% static '/css/header.css' %}">
+    <link rel="stylesheet" href="{% static '/css/home.css' %}">
+    <link rel="stylesheet" href="{% static '/css/who_are_we.css' %}">
+    <link rel="stylesheet" href="{% static '/css/leaders.css' %}">
+    <link rel="stylesheet" href="{% static '/css/partners.css' %}">
+    <link rel="stylesheet" href="{% static '/css/contact_us.cs' %}s">
+    <link rel="stylesheet" href="{% static '/css/footer.css' %}">
+
+    <!-- icons library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+</head>
+<body>
+    <div class = "container">
+
+        <!-- Header -->
+        <div class = header>
+            
+            <nav>
+                <div class = "logo">
+                    <a href="#home">
+                        <img src="{% static '/images/logo.png' %}"
+                        alt="logo">
+                    </a>
+                </div>
+
+                <ul>
+                    <li><a href="#who-are-we">Who Are We</a></li>
+                    <li><a href="#our-belief">Our Belief</a></li>
+                    <!-- This element will have a dropdown menu -->
+                    <li>
+                        <a 
+                            href="#our-work">Our Work
+                            <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="#classrooms">Classrooms</a></li>
+                            <li><a href="#desks">Desks</a></li>
+                            <li><a href="#birth-certificates">Birth certificates</a></li>
+                            <li><a href="#awareness-campaigns">Awareness</a></li>
+                        </ul>
+                    </li>
+                    <!-- This element will have a dropdown menu -->
+                    <li>
+                        <a 
+                            href="#media">Media
+                            <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                            <!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                        </a>
+                        <ul class = "dropdown">
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#analytics">Analytics</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#make-a-donation">Make a Donation</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <!-- Home Page -->
+    <div class = "home"  id="home">
+
+        <div class = "home-content active">
+            <img src="{% static '/images/book_shelf.jpg' %}" alt="">
+            <div class="info">
+                <h2>WHAT WE'VE DONE RECENTYLY </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Excepturi,quod, 
+                    facere aperiam nobis accusantium voluptatibus debitis nam quidem iure natus 
+                    odit ullam eligendi doloremque ipsum quaerat pariatur eius vitae placeat.
+                </p>
+            </div>
+        </div>
+        <div class = "home-content">
+            <img src="{% static '/images/classroom.jpg' %}" alt="">
+            <div class="info">
+                <h2>WHAT WE'VE DONE RECENTYLY </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Excepturi,quod, 
+                    facere aperiam nobis accusantium voluptatibus debitis nam quidem iure natus 
+                    odit ullam eligendi doloremque ipsum quaerat pariatur eius vitae placeat.
+                </p>
+            </div>
+        </div>
+        <div class = "home-content">
+            <img src="{% static '/images/classroom1.jpg' %}" alt="">
+            <div class="info">
+                <h2>WHAT WE'VE DONE RECENTYLY </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Excepturi,quod, 
+                    facere aperiam nobis accusantium voluptatibus debitis nam quidem iure natus 
+                    odit ullam eligendi doloremque ipsum quaerat pariatur eius vitae placeat.
+                </p>
+            </div>
+        </div>
+        <div class = "home-content">
+            <img src="{% static '/images/conference.jpg' %}" alt="">
+            <div class="info">
+                <h2>WHAT WE'VE DONE RECENTYLY </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Excepturi,quod, 
+                    facere aperiam nobis accusantium voluptatibus debitis nam quidem iure natus 
+                    odit ullam eligendi doloremque ipsum quaerat pariatur eius vitae placeat.
+                </p>
+            </div>
+        </div>
+        <div class = "home-content">
+            <img src="{% static '/images/library.jpg' %}" alt="">
+            <div class="info">
+                <h2>WHAT WE'VE DONE RECENTYLY </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Excepturi,quod, 
+                    facere aperiam nobis accusantium voluptatibus debitis nam quidem iure natus 
+                    odit ullam eligendi doloremque ipsum quaerat pariatur eius vitae placeat.
+                </p>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <div class="btn active"><i class="fa fa-circle-o"></i></div>
+            <div class="btn"><i class="fa fa-circle-o"></i></div>
+            <div class="btn"><i class="fa fa-circle-o"></i></div>
+            <div class="btn"><i class="fa fa-circle-o"></i></div>
+            <div class="btn"><i class="fa fa-circle-o"></i></div>
+        </div>
+
+        <!-- Add chervrons -->
+        <div class="chevron left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="chevron right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+    </div>
+
+
+    <!-- Who are We-->
+    <div class="who-are-we" id = "who-are-we">
+        <h1>Who Are We</h1>
+        <div class="about-us" >
+            <img src="{% static '/images/hands2.jpg' %}" alt="">
+            <p>
+                We are a passionate Community-Based Organization (CBO) based in Matsangoni Ward, Kilifi County,
+                committed to elevating educational standards in our community.
+                Concerned by persistently low academic performance and high dropout rates, we aspire to a future where see at least 80% of our students transition to higher education.
+                We believe quality education is the cornerstone of progress and empowerment. We are determined to create opportunities for our kids to excel academically.
+                However, we recognize that no single individual has all the expertise, resources, or know how to address these challenges alone.
+                That’s why we are calling on individuals and organizations who share this vision to join us. Whether through volunteering skills, financial support,
+                or in any manner they see fit—no matter how small—every effort counts. By partnering with us, you contribute to the UN Sustainable Development Goals 4 (Quality Education)
+                and 10 (Reduced Inequalities). Together, through collective action and shared purpose, we can provide the resources, avenues, and hope needed to empower our students and transform our community.
+                
+                <button type = "submit" class="learn-more">
+                    Learn More
+                    <i class="fa fa-info" aria-hidden="true"></i>
+                </button>
+            </p>
+        </div>
+        
+    </div>
+
+
+    <div class="leadership">
+        <h1>Our Leadership</h1>
+        <div class="leader active">
+            <div class="leader-info">
+                <h2>Mr. Mtana Mwahunga</h2>
+                <p>
+                    Mr. Mtana, the <span>Founder and Chairperson</span>, MEI is a visionary leader driven by a profound belief that while opportunities may be limited, brilliance and talent are abundant.
+                    His unwavering commitment to unlocking the potential of every student in the community has been the cornerstone of this initiative. As the architect of this transformative mission, 
+                    he inspires others with his dedication to creating pathways for success, regardless of the challenges faced. His leadership embodies hope, resilience, and a steadfast belief that through collaboration and shared purpose,
+                    this organization can break barriers, restore the glory of our schools, and nurture the untapped talent that exists within our youth. His passion and relentless pursuit of excellence set the foundation for the community’s brighter future.
+            </div>
+            <img src="{% static '/images/Mtana2.jpg' %}" alt="">
+        </div>
+
+        <div class="leader">
+            <div class="leader-info">
+                <h2>CPA. Teddy Yanga</h2>
+                <p>
+                    Mr. Teddy Yanga, who serves as our <span>Secretary</span>, holds a deep and personal connection to the mission.
+                    He attended the very schools that are now struggling, having completed his primary education at Maweni Primary School during a time when they were thriving.
+                    He has firsthand experience of the schools’ potential which fuels our unwavering belief that this CBO has the power to restore their lost glory.
+                    He is convinced that with the right resources, dedication, and collective effort, these schools can once again become beacons of academic excellence, 
+                    empowering the next generation to succeed.
+                </p>
+            </div>
+            <img src="{% static '/images/Teddy.jpeg' %}" alt="">
+        </div>
+
+        <div class="navigation-2">
+            <div class="btn2 active"><i class="fa fa-circle-o"></i></div>
+            <div class="btn2"><i class="fa fa-circle-o"></i></div>
+        </div>
+    </div>
+
+    <div class = "partners">
+        <h1>Our Patners</h1>
+        <div class="partners-container">
+            <div class = logos_wrapper>
+                <img src="{% static '/images/kilifi_county.jpg' %}" alt="">
+                <img src="{% static '/images/sdgs.png' %}" alt="">
+                <img src="{% static '/images/county_commisioner.jpg' %}" alt="">
+                <img src="{% static '/images/national_gvt.png' %}" alt="">
+
+                <!--We'll duplicate logos for smooth scrolling-->
+                <img src="{% static '/images/kilifi_county.jpg' %}" alt="">
+                <img src="{% static '/images/sdgs.png'%}" alt="">
+                <img src="{% static '/images/county_commisioner.jpg' %}" alt="">
+                <img src="{% static '/images/national_gvt.png' %}" alt="">
+                
+                <!--We'll duplicate logos for smooth scrolling-->
+                <img src="{% static '/images/kilifi_county.jpg' %}" alt="">
+                <img src="{% static '/images/sdgs.png' %}" alt="">
+                <img src="{% static '/images/county_commisioner.jpg' %}" alt="">
+                <img src="{%static '/images/national_gvt.png' %}" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <div class = "contact-us" id = "contact-us">
+        <div class="contact-us-container">
+            <div class="contact-us-info">
+                <h1>Talk To Us</h1>
+                <p>
+                    Join us in transforming education and shaping a brighter future for our community! Whether you choose to volunteer your skills, 
+                    contribute funds, or simply stay connected and support our mission, every effort makes a difference. Together, 
+                    aligned with our shared values, we can create meaningful change and unlock the potential of our kids.
+                </p>
+            </div>
+
+            <div class= "address">
+                <div class="location">
+
+                    <div class="text-icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <h2 >Location</h2>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <p>
+                            Matsangoni, Kilifi Kenya:
+                            <br>
+                            Lane Karakara.
+                        </p>
+                    
+                    </div>
+                </div>
+
+                <div class="phone">
+                    <div class="text-icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <h2>Phone</h2>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <p>Tell: 0757374570 <br>Tell: 0722996281</p>
+                    </div>
+                
+                </div>
+
+                <div class="email">
+
+                    <div class="text-icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <h2>Email</h2> 
+                    </div>
+                    
+                    <div class="contact-info">
+                        <p>barakamtana@gmail.com</p>
+                    </div>
+
+                </div>
+
+                <div class="box-office">
+
+                    <div class="text-icon">
+                        <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                        <h2>P.O Box</h2>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <p>1301, 80108: <br>Kilifi.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="join">
+                <h1>Join Us</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div>
+            <p> &copy; 2024 Matsangoni Elimu Initiative.</p>
+        </div>
+        
+        <div>
+            <p>Designed with <i class="fa fa-heart" aria-hidden="true"></i> by <span>Baraka Mtana</span></p>
+        </div>
+
+        <div class="terms">
+            <a href="">General Terms</a>
+        </div>
+
+        <div class="icons">
+            <a href="https://wa.me/+254717174490" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+                <i class="fi fi-brands-whatsapp" title="WhatsApp"></i>
+            </a>
+            <a href="https://web.facebook.com/" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+                <i class="fi fi-brands-facebook" title="Facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/live" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+                <i class="fi fi-brands-tik-tok" title="Tiktok"></i>
+            </a>
+            <a href="https://www.instagram.com/barakamtana/" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+                <i class="fi fi-brands-instagram" title="Instagram"></i>
+            </a>
+            <a href="https://linkedin.com/in/barakamtana" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+                <i class="fi fi-brands-linkedin" title="Linkedin"></i>
+            </a>
+            
+        </div>
+    </div>
+
+    <script src="{% static '/js/home.js' %}"></script>
+    <script src="{% static '/js/leaders.js' %}"></script>
+</body>
+</html> 

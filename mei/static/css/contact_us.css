@@ -1,0 +1,133 @@
+.contact-us{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    /* margin: 40px 5px; */
+    margin: 0px 5px;
+    background-color: #fff;
+}
+
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contact-us-container .contact-us-info h1{
+    text-align: center;
+    color: #228B22;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-us-container .contact-us-info p{
+    line-height: 1.6; 
+    padding: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+.contact-us-container .address{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+} 
+
+.location, .phone, .email, .box-office{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 150px; 
+    /* justify-content: space-between; */
+}
+
+
+.text-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.text-icon i{
+    margin-right: 5px;
+    color: #228B22;
+}
+
+
+.text-icon h2{
+    color: #228B22;
+    margin-right: 8px;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+
+
+.contact-info p{
+    line-height: 1.2; 
+    /* padding: 10px; */
+    color: #555;
+}
+
+
+.join {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #228B22;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.join h1 {
+    color: #228B22;
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth scaling and shadow effect */
+}
+
+
+.join:hover{
+    background-color: #228B22;
+    h1 {
+        color: #fff;
+        transform: scale(1.4); /* Slightly enlarge the text */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+    }
+}
+
+
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .contact-us-container .address {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .location, .phone, .email, .box-office {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+

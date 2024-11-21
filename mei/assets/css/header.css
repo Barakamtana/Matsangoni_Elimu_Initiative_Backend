@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add some padding to the body to prevent content overlap with the fixed navbar */
+body {
+    padding-top: 80px;
+    background-color: #f4f2ee;
+}
+
+
+nav {
+    position: fixed; /* Sticks the navbar to the top */
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: black; 
+    z-index: 1000; 
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo img {
+    width: 80px; 
+    height: auto; 
+    max-width: 100%; 
+    object-fit: contain; 
+  }
+  
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    
+}
+
+nav ul li{
+    list-style: none;
+    margin: 10px 20px;
+    font-size: 20px;
+    position: relative; /* Needed for dropdown positioning */
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a i{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*  we might reuse this colors
+
+    Olive Green: #808000
+    Soft Grey: #D3D3D3
+    Forest Green: #228B22
+ */
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #228B22;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+nav ul li a:hover {
+    color: #228B22; 
+}
+
+
+nav ul li a:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.dropdown{
+    display: block; /* Always occupy space but hide initially */
+    opacity: 0; /* Start fully transparent */
+    visibility: hidden; /* Ensure it's not focusable when hidden */
+    /* display: none; Hide dropdown by default */
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #f9f9f9; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1000; /* Ensure it appears above other elements */
+    transform: translateY(-10px); /* Start 10px higher for the rising effect */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition for opacity and position */
+
+}
+
+.dropdown li {
+    width: 150px; /* Adjust dropdown width */
+}
+
+.dropdown li a {
+    color: black; 
+    text-decoration: none;
+    font-weight: 400; /* default font*/
+    font-size: 18px;
+}
+
+/* Show dropdown on hover */
+nav ul li:hover .dropdown {
+    opacity: 1; /* Fully visible on hover */
+    visibility: visible; /* Make it focusable */
+    /* display: block; */
+    transform: translateY(0); /* Reset position to its normal place */
+}
+
+
+.dropdown li a:hover {
+    color: #228B22; 
+}
+
+

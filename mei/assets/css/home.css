@@ -1,0 +1,121 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+.home .home-content{
+    position: relative;
+    display: none; /* Hide all slides by default */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade-in effect */
+}
+
+.home .home-content.active {
+    display: block; /* Show only the active slide */
+    opacity: 1;
+  }
+
+.home .home-content img{
+    width: 100%;
+
+}
+
+.home .home-content .info{
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    padding: 10px; 
+    width: 250px; 
+    padding: 20px; 
+    width: 80%; 
+    padding: 15px 30px;
+}
+
+.home-content .info h2{
+    color: #228B22;
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.home-content .info p{
+    color: #fff;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-color: rgba(34, 139, 34, 0.3);
+    font-size: 20px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.home .navigation{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.navigation .btn {
+    width: 18px; 
+    height: 18px; 
+    border-radius: 50%; 
+    margin: 0 5px; 
+    border: 2px solid white; 
+  }
+  
+  .navigation .btn:hover {
+    border: 2px solid #228B22;
+    background-color: #228B22; 
+  }
+  
+  .navigation .btn.active {
+    border: 2px solid #228B22;
+    background-color: #228B22;
+  }
+
+  /* .btn.active {
+    background-color: #228B22;
+  } */
+  
+  .btn i {
+    color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover i,
+  .btn.active i {
+    color: white;
+  }
+
+  .home .chevron {
+    position: absolute;
+    top: 60%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for exact centering */
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100; /* Ensure it appears above other content */
+  }
+  
+
+  .home .chevron.left {
+    left: 20px; 
+  }
+  
+  .home .chevron.right {
+    right: 20px; 
+  }
+
+  .home .chevron i {
+    color: white; 
+    font-size: 24px;
+  }
+  
+  .home .chevron:hover {
+    background-color: #228B22;
+  }
+  

@@ -1,0 +1,56 @@
+.who-are-we {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 20px auto; 
+    padding: 0 40px; 
+  }
+  
+.who-are-we h1 {
+    text-align: center; 
+    font-size: 36px; 
+    color: #228B22; 
+  }
+  
+
+.who-are-we .about-us {
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+
+.who-are-we .about-us img {
+    flex: 1; /* Makes the image take up proportional space */
+    max-width: 300px; 
+}
+  
+.who-are-we .about-us p {
+    flex: 2; /* Makes the paragraph take up more space */
+    font-size: 16px; 
+    line-height: 1.6; 
+    color: #555; 
+    text-align: justify; 
+  }
+
+.learn-more {
+    display: block;
+    padding: 10px 20px; 
+    color: black; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    text-align: center; 
+    font-size: 16px; 
+    width: auto; 
+    margin-top: 10px;
+}
+
+.learn-more:hover {
+    background-color: #228B22; 
+}
+
+.who-are-we .learn-more i {
+    margin-left: 8px; 
+}

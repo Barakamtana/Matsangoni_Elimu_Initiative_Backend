@@ -1,0 +1,45 @@
+.partners {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    margin: 40px auto;
+    /* margin: 40px auto 0 auto; */
+    max-width: 1100px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.partners h1{
+    text-align: center;
+    color: #228B22;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.partners-container{
+    overflow: hidden; /* Ensures the moving images stay within bounds */
+    position: relative;
+    width: 100%;
+}
+
+.logos_wrapper {
+    display: flex;
+    gap: 30px; 
+    animation: scroll 40s linear infinite; /* Animation settings */
+}
+
+.logos_wrapper img {
+    height: 150px; /* Set logo size */
+    width: auto;
+    object-fit: contain; /* Ensures logos maintain aspect ratio */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move all the way to the left */
+    }
+}
