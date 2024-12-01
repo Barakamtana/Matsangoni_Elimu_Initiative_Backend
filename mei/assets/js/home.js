@@ -4,7 +4,7 @@ var leftChevron = document.querySelector('.chevron.left');
 var rightChevron = document.querySelector('.chevron.right');
 
 let currentSlide = 0; // Track the current slide
-const slideInterval = 15000; // 15 seconds interval for auto-sliding
+const slideInterval = 15000; // 15 seconds interval for autos-sliding
 
 // Function to show the specific slide
 var showSlide = function (index) {
